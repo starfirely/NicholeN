@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+/* Body
+----------------------------------------------------------------*/
+html, body{
+	margin:0;
+	padding:0;
+	background: #fff;
+	color: #000000;
+	
+}
+
+body,p, input, select, textarea {
+	font-family: "Roboto", sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, input, select, textarea {
+	font-weight: 300;
+}
+
+.text, .textarea {
+	box-sizing: border-box; 
+	width: 100%; 
+	border: 1px solid #ccc; 
+	padding: 10px 15px;
+	font-size:16px;
+	font-size: 1rem;
+}
+
+.textara{
+	height:140px;
+}
+
+/*Global Styles 
+-------------------------------------------------------------*/
+.section{
+	padding: 60px 20px;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.section-title{
+	font-size: 48px;
+	line-height: 1;
+	text-align:center;
+	margin:0 ;
+}
+
+.lead{
+	line-height: 1.25;
+	font-size:1.3rem;
+	color:#999;
+	margin-bottom: 35px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.list-inline {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding: 0;
+	list-style-type:none;
+	font-size:0.85rem;
+	color:#999;
+}
+
+.list-inline-item{
+	flex-grow: 1;
+	margin-bottom: 5px;
+}
+
+.list-inline-item .fa {
+	color:#890BDD;
+	margin-right: 7px;
+}
+
+.form-feild{
+	margin-bottom: 10px;
+}
+
+.img-rounded{
+	border-radius: 100%;
+}
+
+.btn{
+	box-sizing: border-box;
+	text-decoration: none;
+	display:inline-block;
+	background: #CCC;
+	padding: 15px 20px;
+	border: none;
+	font-weight:bold;
+}
+
+.btn-primary {
+	background-color:#890bdd;
+	color: #fff;
+}
+
+.feature-item {
+	padding: 20px;
+}
+
+.feature-icon {
+	font-size: 24px;
+	font-size: 1.5rem;
+	background: #890bdd;
+	color: #fff;
+	padding: 15px;
+	border-radius: 100%;
+}
+
+.feature-title {
+	font-size: 28px;
+	font-size: 1.75rem;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.feature-description{
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+@media (max-width: 768px){
+	.btn {
+		width:100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+/*Header------------------------------------------------------*/
+.site-header{
+	position: fixed;
+	border-bottom: 1px solid #e4e4e4;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 3;
+}
+
+.brand {
+	line-height:1;
+	font-size:28px;
+	font-size: 1.75rem;
+}
+
+.brand a {
+	text-decoration: none;
+	color: #333;
+}
+
+/* About 
+----------------------------------------------------------------*/
+
+#about {
+	padding-top: 120px; 
+}
+.site-title {
+	font-size: 4rem;
+	color: #890bdd;
+	font-family: "Yellowtail", cursove, sans-serif;
+}
+
+#about .lead {
+	font-size: 1.35rem;
+	line-height:1.3;
+	text-align: left;
+}
+
+#avatar{
+	width: 400px; 
+	height: auto;
+	display: block;
+	margin: 0 auto; 
+	position: relative;
+	top:50%;
+	transform: translateY(-50%);
+	}
+
+@media (max-width:768px) {
+	#about .site-sitle {
+		text-align: center;
+	}
+}
+
+/*Skills--------------------------------------------------------*/
+
+#skills {
+	background: #fafafa
+}
+
+/*Portfolio--------------------------------------------------------*/
+
+.project-title {
+	font-size: 3rem;
+	margin: 0;
+	line-height: 1;
+	font-family: "Yellowtail", cursive, sans-serif;
+	color:#890bdd;
+}
+
+@media (max-width: 768px){
+	.portfolio .col3 {
+		grid-column: span 6;
+	}
+}
+
+@media (max-width: 480px) {
+	.portfolio .col3{
+	grid-column: span 12;
+	text-align: center;
+	}
+}
+
+
+/*Testiomonials--------------------------------------------------------*/
+
+#clients {
+	backgrounds: #fafafa;
+}
+
+.testiomonial-item{
+	background: #fff;
+	padding: 30px 25px 20px 25px;
+	border: 1px solid #f1f1f1;
+}
+
+.testiomonial-avatar {
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+}
+
+.testiomonial-title{
+	font-size: 1.75rem;
+}
+
+.testiomnoial-content{
+	line-height: 1.3;
+}
+
+.testiomonial-author {
+	font-size: 0.8rem;
+}
+
+/*Contact--------------------------------------------------------*/
+#contact {
+	background: #222;
+	border-color:#333;
+}
+
+#contact .section-header {
+	border-bottom: 1px dotted #444;
+}
+
+#contact .section-title {
+	font-family: "Yellowtail", cursive, sans-serif;
+	color:#890bdd;
+}
+
+#contact .lead {
+	color:#777;
+}
+
+.form-title{
+	color:#999;
+	font-size: 2.25rem;
+	margin: 0 0 10px 0;
+}
+
+.dark .text, 
+.dark .textarea {
+	color:#999;
+	border-color:#222;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: inset 0 2px 3px rgba(0,0,0,0.6);
+	box-shadow-webkit: inset 0 2px 3px rgba(0,0,0,0.6);
+}
+
+.dark .btn-submit {
+	color: #fff;
+	background-color: rgba(0,0,0,0.2);
+	border: 1px solid rgba(0,0,0,0.1);
+	font-weight: 300;
+}
+
+.dark .btn-submit:hover,
+.dark .btn-submit:focus {
+	background-color: rgba(0,0,0,0.35);
+	border-color: rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+
+#status-messages {
+	margin-top: 0.7rem;
+	padding: 1rem;
+	color: #fff;
+}
+
+#status-messages.error {
+	background: #dc3545;
+}
+
+#status-messages.success{
+	background:#28a745;
+}
+
+/*Site-Footer--------------------------------------------------------*/
+
+.site-footer {
+	paddings: 20px;
+	background: #2d2d2d;
+	color:#999;
+}
+
